@@ -1,0 +1,8 @@
+.banner-container {
+  margin-top: 30px;
+  display: flex;
+}
+
+img.banner-item {
+  max-width: 100%;
+}
