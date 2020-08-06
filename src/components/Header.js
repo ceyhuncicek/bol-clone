@@ -2,7 +2,7 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import SearchIcon from "@material-ui/icons/Search";
 import Navbar from "../components/Navbar.js";
@@ -37,9 +37,9 @@ export default function Header() {
           </Link>
           <Link to="/checkout" className="header_link_icon">
             <div>
-              <div class="shopping_cart">
-                <ShoppingBasketIcon />
-                <span class="badge">{basket.length}</span>
+              <div className="shopping_cart">
+                <ShoppingCartIcon />
+                <span className="badge">{basket?.length}</span>
               </div>
             </div>
           </Link>
