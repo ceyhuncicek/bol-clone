@@ -5,10 +5,8 @@ import { useStateValue } from "./StateProvider.js";
 import { auth } from "./firebase";
 
 function App() {
+  // eslint-disable-next-line
   const [{ user }, dispatch] = useStateValue();
-
-  // useEffect
-  //
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(authUser => {
@@ -33,7 +31,6 @@ function App() {
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  console.log("USER IS >>>", user);
   return <Routes />;
 }
 

@@ -5,7 +5,6 @@ import CheckoutProduct from "../components/CheckoutProduct";
 
 export default function Checkout() {
   const [{ basket }] = useStateValue();
-  console.log(basket);
 
   return (
     <main>
