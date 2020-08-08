@@ -73,6 +73,7 @@ export default function Products() {
 }
 
 function Product({ id, title, image, price }) {
+  //eslint-disable-next-line
   const [{ basket }, dispatch] = useStateValue();
   const addToBasket = () => {
     dispatch({

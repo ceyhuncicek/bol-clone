@@ -1,44 +1,61 @@
-This is very very bad clone of popular ecommerce webpage bol.com. I just used some shapes and product links and builded a working shopping cart. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a very very bad clone of popular e-commerce webpage bol.com. I just used some shapes and product links and built a working shopping cart.
 
-## Available Scripts
+## Requirements
 
-In the project directory, you can run:
+NodeJS v10 or greater
+npm v6 or greater
 
-### `yarn start`
+## Setup
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+git clone https://github.com/ceyhuncicek/react-bol-clone
+cd bol-clone
+npm install
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Setting up Firebase **(FREE)**
 
-### `yarn test`
+For authentication, firebase has been used. Firebase config took from .env file. Steps are here to create a firebase account and get config data. If you already have it, skip stepping 9.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Create a Gmail account. (if you don't have it)
+2. Go to https://firebase.google.com/ login with the Gmail account and click on get started.
+3. Put a project name and next, next for the rest.
+4. Click on the project and go Authentication.
+5. Click on set an Authentication way and enable email.
+6. Your project name > project settings.
+7. under "Firebase SDK snippet" select Config.
+8. Here you have all the .env variable you need.
+9. Create a .env file on the root.
 
-### `yarn build`
+```
+   REACT_APP_FIREBASE_apiKey=**YOURKEY**
+   REACT_APP_FIREBASE_authDomain=**YOURKEY**
+   REACT_APP_FIREBASE_databaseURL=**YOURKEY**
+   REACT_APP_FIREBASE_projectId=**YOURKEY**
+   REACT_APP_FIREBASE_storageBucket=**YOURKEY**
+   REACT_APP_FIREBASE_messagingSenderId=**YOURKEY**
+   REACT_APP_FIREBASE_appId=**YOURKEY**
+   REACT_APP_FIREBASE_measurementId=**YOURKEY**
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+10. Put your data at the correct place in the .env file.
+11. That's all! Now Start the project.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Start Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm run start
+```
 
-### `yarn eject`
+or
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+yarn start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- create-react-app
+- @material-ui
+- react-router-dom
+- firebase

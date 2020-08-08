@@ -3,6 +3,7 @@ import "./CheckoutProduct.css";
 import { useStateValue } from "../StateProvider";
 
 export default function CheckoutProduct({ id, title, image, price }) {
+  // eslint-disable-next-line
   const [{ basket }, dispatch] = useStateValue();
   const removeFromBasket = () => {
     dispatch({

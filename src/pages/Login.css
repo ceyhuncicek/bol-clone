@@ -1,0 +1,13 @@
+.login {
+  margin: 50px auto 50px auto;
+  max-width: 1025px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login__title {
+  margin-bottom: 10px;
+}
+.login__button {
+  color: blue;
+}
